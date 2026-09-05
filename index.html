@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>background</title>
+        <style>
+            .container{ 
+                background-image: url(https://t3.ftcdn.net/jpg/06/34/01/38/240_F_634013894_ChkjM0YoAgqjM9nLNWNllC0eru45eEAe.jpg
+                );
+            }
+    
+        </style>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge - Academia Industry Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        /* ---------- NAVBAR ---------- */
+
+        .navbar {
+            height: 70px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6%;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+
+        .logo span {
+            color: #111827;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: #4f46e5;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            background: #4f46e5;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* ---------- HERO ---------- */
+
+        .hero {
+            margin: 35px auto;
+            width: 88%;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            border-radius: 20px;
+            padding: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: #4f46e5;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-icon {
+            font-size: 100px;
+        }
+
+        /* ---------- CONTAINER ---------- */
+
+        .container {
+            width: 88%;
+            margin: auto;
+        }
+
+        .section-title {
+            margin: 35px 0 20px;
+            font-size: 25px;
+        }
+
+        /* ---------- STATS ---------- */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+        }
+
+        .stat-card h2 {
+            color: #4f46e5;
+            font-size: 30px;
+        }
+
+        .stat-card p {
+            margin-top: 8px;
+            color: #6b7280;
+        }
+
+        /* ---------- FEATURE CARDS ---------- */
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+        }
+
+        .feature-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .feature-card button {
+            margin-top: 18px;
+            padding: 10px 18px;
+            border: none;
+            background: #eef2ff;
+            color: #4f46e5;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* ---------- OPPORTUNITIES ---------- */
+
+        .opportunities {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .opportunity {
+            background: white;
+            padding: 22px;
+            border-radius: 15px;
+            border-left: 5px solid #4f46e5;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .company {
+            color: #4f46e5;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+
+        .tags {
+            margin-top: 12px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f3f4f6;
+            padding: 6px 9px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin: 3px;
+        }
+
+        .apply-btn {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            background: #4338ca;
+        }
+
+        /* ---------- SKILL PROGRESS ---------- */
+
+        .skill-section {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 30px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .progress {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #4f46e5;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            margin-top: 60px;
+            background: #111827;
+            color: white;
+            padding: 35px 6%;
+            text-align: center;
+        }
+
+        footer p {
+            color: #9ca3af;
+            margin-top: 8px;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media(max-width: 900px) {
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features,
+            .opportunities {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-icon {
+                display: none;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            .stats,
+            .features,
+            .opportunities {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 30px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Skill<span>Bridge</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+
+        <div class="profile">
+            <div class="profile-img">A</div>
+            <span>Student</span>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="dashboard">
+
+        <div class="hero-content">
+
+            <h1>Build Skills. Find Opportunities.</h1>
+
+            <p>
+                Connect your academic skills with industry requirements,
+                discover internships and jobs, and build your professional
+                digital portfolio.
+            </p>
+
+            <button onclick="startAssessment()">
+                Start Skill Assessment →
+            </button>
+
+        </div>
+
+        <div class="hero-icon">
+            🎓
+        </div>
+
+    </section>
+
+
+    <main class="container">
+
+        <!-- STATS -->
+
+        <h2 class="section-title">Your Progress</h2>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2>72%</h2>
+                <p>Skill Match Score</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>08</h2>
+                <p>Skills Verified</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>14</h2>
+                <p>Recommended Jobs</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>06</h2>
+                <p>Internships Available</p>
+            </div>
+
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <h2 class="section-title">Explore Platform</h2>
+
+        <div class="features">
+
+            <div class="feature-card" id="skills">
+
+                <div class="feature-icon">🧠</div>
+
+                <h3>Skill Assessment</h3>
+
+                <p>
+                    Take technical and soft-skill assessments to identify
+                    your strengths and skill gaps.
+                </p>
+
+                <button onclick="startAssessment()">
+                    Take Assessment
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🎯</div>
+
+                <h3>Skill Mapping</h3>
+
+                <p>
+                    Discover suitable career roles, industries and skills
+                    based on your profile.
+                </p>
+
+                <button onclick="showMessage('Skill Mapping opened')">
+                    View Skill Map
+                </button>
+
+            </div>
+
+
+            <div class="feature-card" id="learning">
+
+                <div class="feature-icon">📚</div>
+
+                <h3>Learning Programs</h3>
+
+                <p>
+                    Find industry-relevant courses, certifications,
+                    workshops and mentorship programs.
+                </p>
+
+                <button onclick="showMessage('Learning programs opened')">
+                    Explore Courses
+                </button>
+
+            </div>
+
+
+            <div class="feature-card" id="internships">
+
+                <div class="feature-icon">💼</div>
+
+                <h3>Internships</h3>
+
+                <p>
+                    Search and apply for internships matched with your
+                    skills and career interests.
+                </p>
+
+                <button onclick="showMessage('Internships opened')">
+                    Find Internship
+                </button>
+
+            </div>
+
+
+            <div class="feature-card" id="jobs">
+
+                <div class="feature-icon">🚀</div>
+
+                <h3>Placement & Jobs</h3>
+
+                <p>
+                    Get personalized entry-level job recommendations based
+                    on your eligibility and skills.
+                </p>
+
+                <button onclick="showMessage('Jobs opened')">
+                    Find Jobs
+                </button>
+
+            </div>
+
+
+            <div class="feature-card" id="portfolio">
+
+                <div class="feature-icon">📄</div>
+
+                <h3>Digital Portfolio</h3>
+
+                <p>
+                    Showcase verified skills, certificates, projects,
+                    internships and achievements.
+                </p>
+
+                <button onclick="showMessage('Digital portfolio opened')">
+                    View Portfolio
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SKILL PROFILE -->
+
+        <h2 class="section-title">My Skill Profile</h2>
+
+        <div class="skill-section">
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>HTML / CSS</span>
+                    <strong>85%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>JavaScript</span>
+                    <strong>70%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>Python</span>
+                    <strong>65%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:65%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>Communication</span>
+                    <strong>80%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- OPPORTUNITIES -->
+
+        <h2 class="section-title">Recommended Opportunities</h2>
+
+        <div class="opportunities">
+
+            <div class="opportunity">
+
+                <h3>Frontend Developer Intern</h3>
+
+                <div class="company">
+                    Tech Company
+                </div>
+
+                <p>📍 Remote</p>
+
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+
+                <button class="apply-btn"
+                        onclick="apply('Frontend Developer Intern')">
+                    Apply Now
+                </button>
+
+            </div>
+
+
+            <div class="opportunity">
+
+                <h3>Python Developer Intern</h3>
+
+                <div class="company">
+                    Software Company
+                </div>
+
+                <p>📍 Hybrid</p>
+
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">SQL</span>
+                </div>
+
+                <button class="apply-btn"
+                        onclick="apply('Python Developer Intern')">
+                    Apply Now
+                </button>
+
+            </div>
+
+
+            <div class="opportunity">
+
+                <h3>Data Analyst Trainee</h3>
+
+                <div class="company">
+                    Analytics Company
+                </div>
+
+                <p>📍 On-site</p>
+
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">SQL</span>
+                </div>
+
+                <button class="apply-btn"
+                        onclick="apply('Data Analyst Trainee')">
+                    Apply Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>SkillBridge</h3>
+
+        <p>
+            Connecting Academia with Industry
+        </p>
+
+        <p>
+            © 2026 SkillBridge | SIH Project
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function startAssessment() {
+
+            alert(
+                "Skill Assessment\n\n" +
+                "Assessment module will start here."
+            );
+
+        }
+
+
+        function showMessage(message) {
+
+            alert(message);
+
+        }
+
+
+        function apply(job) {
+
+            alert(
+                "Application Started!\n\n" +
+                "You selected: " + job
+            );
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">
+            <span class="cap">🎓</span>
+            <span class="bridge">〰</span>
+        </div>
+
+        <div class="logo-text">
+            Skill<span>Bridge</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <button class="login-btn">Login</button>
+
+</header>
